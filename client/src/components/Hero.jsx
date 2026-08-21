@@ -1,4 +1,4 @@
-import heroImage from "../assets/images/lemongrass-tea.png";
+import heroImage from "../assets/images/lemongrass-tea.jpg";
 import { motion } from "framer-motion";
 
 function Hero() {

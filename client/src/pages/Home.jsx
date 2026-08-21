@@ -119,7 +119,7 @@ const Home = () => {
             <div className="relative w-full max-w-[500px]">
               <div className="absolute inset-0 rounded-full border border-dark-green/10 animate-spin-slow"></div>
               <img
-                src="http://localhost:5000/images/herbal-tea.png"
+                src="http://localhost:5000/images/Homepage.png"
                 alt="RP Ceylon Natural Tea"
                 className="w-full h-auto drop-shadow-2xl z-10 relative"
               />

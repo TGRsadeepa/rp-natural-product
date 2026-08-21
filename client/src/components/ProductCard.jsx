@@ -13,9 +13,11 @@ const ProductCard = ({ product }) => {
   const originalPrice = product.price;
   const finalPrice = originalPrice - (originalPrice * (discount / 100));
 
-  // Determine image url: default to placeholder if not present
+  // Use the database image when available, otherwise use the local catalog image.
   const primaryImage = product.images?.find((img) => img.isPrimary) || product.images?.[0];
-  const imageUrl = primaryImage ? `http://localhost:5000${primaryImage.url}` : '/images/sdsd.png';
+  const imageUrl = primaryImage
+    ? `http://localhost:5000${primaryImage.url}`
+    : product.image || '/images/sdsd.png';
 
   const handleAdd = (e) => {
     e.preventDefault();
